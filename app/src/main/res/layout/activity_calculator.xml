@@ -139,6 +139,12 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="." />
+
+                    <Button
+                        android:id="@+id/but_c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="C" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -149,31 +155,31 @@
                 android:orientation="vertical">
 
                 <Button
-                    android:id="@+id/butPlus"
+                    android:id="@+id/but_plus"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="+" />
 
                 <Button
-                    android:id="@+id/butMinus"
+                    android:id="@+id/but_minus"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="-" />
 
                 <Button
-                    android:id="@+id/butDivide"
+                    android:id="@+id/but_divide"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="/" />
 
                 <Button
-                    android:id="@+id/butMult"
+                    android:id="@+id/but_mult"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="*" />
 
                 <Button
-                    android:id="@+id/butEq"
+                    android:id="@+id/but_eq"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="=" />
