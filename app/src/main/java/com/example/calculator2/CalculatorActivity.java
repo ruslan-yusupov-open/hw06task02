@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -95,6 +96,22 @@ public class CalculatorActivity extends AppCompatActivity {
         butMult.setOnClickListener(view -> actionClick("mult"));
         butEq.setOnClickListener(view -> actionClick("eq"));
         butPm.setOnClickListener(view -> actionClick("pm"));
+
+        Button butToComplex = findViewById(R.id.button_complex);
+        Button butToSimple = findViewById(R.id.button_simple);
+        View view1 = findViewById(R.id.layout_1);
+        View view2 = findViewById(R.id.layout_2);
+
+        butToComplex.setOnClickListener(view -> {
+            view1.setVisibility(View.GONE);
+            view2.setVisibility(View.VISIBLE);
+        });
+
+
+        butToSimple.setOnClickListener(view -> {
+            view2.setVisibility(View.GONE);
+            view1.setVisibility(View.VISIBLE);
+        });
     }
 
     private void actionClick(String action) {
