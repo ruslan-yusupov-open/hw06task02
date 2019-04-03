@@ -32,6 +32,75 @@
         android:orientation="vertical"
         android:padding="@dimen/buttonSize"
         tools:context=".MainActivity">
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/UU"
+                android:id="@+id/Y"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Y"
+                android:textSize="30sp"/>
+            <TextView
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/Y"
+                app:layout_constraintRight_toLeftOf="@id/S"
+                android:id="@+id/UU"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="U"
+                android:textSize="30sp"/>
+            <TextView
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/UU"
+                app:layout_constraintRight_toLeftOf="@id/U"
+                android:id="@+id/S"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="S"
+                android:textSize="30sp"/>
+            <TextView
+                app:layout_constraintLeft_toRightOf="@id/S"
+                app:layout_constraintRight_toLeftOf="@id/P"
+                app:layout_constraintTop_toTopOf="parent"
+                android:id="@+id/U"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="U"
+                android:textSize="30sp"/>
+            <TextView
+                app:layout_constraintLeft_toRightOf="@id/U"
+                app:layout_constraintRight_toLeftOf="@id/O"
+                app:layout_constraintTop_toTopOf="parent"
+                android:id="@+id/P"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="P"
+                android:textSize="30sp"/>
+            <TextView
+
+                app:layout_constraintLeft_toRightOf="@id/P"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/V"
+                android:id="@+id/O"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="O"
+                android:textSize="30sp"/>
+            <TextView
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/O"
+                android:id="@+id/V"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="V"
+                android:textSize="30sp"/>
+        </android.support.constraint.ConstraintLayout>
 
         <TextView
             android:id="@+id/main_result"
@@ -39,6 +108,7 @@
             android:layout_height="wrap_content"
             android:text="0.0"
             android:textSize="30sp" />
+
 
         <RelativeLayout
             android:layout_width="wrap_content"
